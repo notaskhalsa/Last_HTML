@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 90%;
+    background-color: white;
+    color: #071330;
+    line-height: 1.5;
+    margin: auto;
+}
+
+button{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3rem;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 0;
+    font-weight: bold;
+}
+
+/*  navbar   */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+}
+
+.logo-name{
+    margin-left: 20px;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-family: sans;
+    color: #0047Ab;
+    font-weight: bold;
+}
+
+.logo img{
+    width: 90px;
+}
+
+.main-nav{
+    margin-right: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    list-style: none;
+}
+
+.main-nav li{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-family: sans;
+    padding: 0 20px;
+}
+
+.main-nav a{
+    color: cornflowerblue;
+    text-decoration: none;
+} 
+
+.current-page{
+   font-weight: bold;
+}
+
+/*   main content   */
+
+.main-content{
+    width: 90%;
+    margin: auto;
+    padding: 150px 0 0 20px;
+}
+
+.content-body-info{
+    width: 60%;
+    margin-bottom: 70px;
+}
+
+.main-content h1{
+    font-weight: 500;
+    font-size: 6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content-secondary{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-end{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.content-end-para{
+    padding: 0 30px;
+    color: cornflowerblue;
+}
+
+#btn-started{
+    background-color: #071330;
+    color: #FAF9F6;
+    margin-right: 15px;
+}
+
+#btn-quote{
+    background-color: #dbd7d2;
+    color: #071330;
+}
+
