@@ -119,3 +119,30 @@ button{
     color: #071330;
 }
 
+/*   Featured    */
+
+.featured {
+    background-color: #1c2732;
+    height: 550px;
+}
+
+.featured-left img{
+    object-fit: contain;
+}
+
+
+/* user image */
+
+.user{
+    display: flex;
+    margin-top: auto;    
+}
+
+.user img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
