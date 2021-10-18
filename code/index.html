@@ -29,6 +29,17 @@
                 <li><a href="#">Product</a></li>
                 <li><a href="#">Pricing</a></li>
             </ul>
+
+            <a href="#" onclick="hamburger()" class="menu-btn">
+                <i class="fas fa-bars fa-2x"></i>
+            </a>
+        </div>
+
+        <div class="hamburger-menu">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Product</a>
+            <a href="#">Pricing</a>
         </div>
 
 
@@ -75,5 +86,19 @@
             </div>
     </div>
     
+
+    <script type="text/javascript">
+        function hamburger(){
+            const x = document.querySelector(".hamburger-menu");
+            if(screen.width <= 768){
+                if(x.style.display === "block"){
+                    x.style.display = "none";
+                }
+                else{
+                    x.style.display = "block";
+                }
+            }
+        }
+    </script>
 </body>
 </html>
