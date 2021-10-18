@@ -27,6 +27,7 @@ button{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .logo{
@@ -72,7 +73,27 @@ button{
    font-weight: bold;
 }
 
-/*   main content   */
+.hamburger-menu{
+    display: none;
+}
+
+.hamburger-menu a{
+   color: black;
+   border-bottom: 1px solid gray;
+   display: block;
+   margin: 5px auto;
+   transition: all 0.3s ease-in-out;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 1.1rem;
+}
+
+.hamburger-menu a:hover{
+    background-color: #1c2732;
+    color: whitesmoke;
+}
+
+/*             main content               */
 
 .main-content{
     width: 90%;
@@ -105,6 +126,7 @@ button{
 }
 
 .content-end-para{
+    text-transform: uppercase;
     padding: 0 30px;
     color: cornflowerblue;
 }
@@ -116,6 +138,7 @@ button{
 }
 
 #btn-quote{
+    padding-left: 41px;
     background-color: #dbd7d2;
     color: #071330;
 }
@@ -142,7 +165,6 @@ button{
 
 .featured-left img{
     object-fit: contain;
-    width: fit-content;
 }
 
 .featured-left .user {
@@ -196,4 +218,205 @@ button{
     width: 70px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+
+/*    MEDIA QUERIES     */
+
+@media(max-width: 768px) {
+    
+    .main-content{
+        padding-left: 30px;
+    }
+    
+    .content-body-info{
+      width: 100%;  
+    }
+
+   .content-secondary{
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .main-content h1{
+       font-size: 5rem;
+   }
+
+   .logo{
+       margin-left: 35px;
+   }
+
+   .content-btn{
+       width: 100%;
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       justify-content: space-between;
+       margin-bottom: 4rem;
+   }
+   
+   .content-end{
+       margin-top: 60px;
+       width: 100%;
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       object-fit: cover;
+       justify-content: space-between;
+   }
+
+   .content-end-para:last-child{
+       justify-self: end;
+   }
+
+   .content-end-para:nth-child(2){
+        justify-self: center;
+    }
+
+   .content-end-para{
+       color: #0047Ab;
+       padding: 0;
+   }
+
+   .main-nav{
+       display: none;
+   }
+
+   .featured-body{
+       grid-template-columns: 1fr;
+   }
+
+   .featured-right{
+       grid-row: 1;
+       padding: 0 20px 30px 30px;
+   }
+
+   .featured-right h1{
+       font-size: 4.5rem;
+   }
+
+   .featured-btn{
+       width: 100%;
+       margin-top: 30px;
+   }
+
+   .featured-left{
+       grid-row: 2;
+   }
+
+   .featured{
+       height: 980px;
+   }
+
+   .featured-left .user h5{
+       font-size: 1.5rem;
+   }
+
+   .user-info p{
+       font-size: 1.1rem;
+   }
+
+   .user img{
+       height: 110px;
+       width: 110px;
+   }
+}
+
+@media(max-width: 500px) {
+    
+    
+    .container, .main-content, .content-body-info
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+    .featured{
+        height: 1200px;
+    }
+
+    .content-end{
+        font-size: 1rem;
+        margin-left: -20px;
+    }
+
+    .content-end-para{
+        padding: 0 10px;
+    }
+
+    .featured-img img{
+        width: auto;
+        height: 480px;
+        padding-left: 25px;
+    }
+
+    .logo{
+        margin-left: 20px;
+    }
+
+    .logo-name{
+        font-size: 0.9rem;
+    }
+
+    .logo img{
+        width: 70px;
+    }
+
+    .menu-btn{
+        margin-right: 25px;
+    }
+}
+
+@media(max-width: 350px) {
+    .menu-btn{
+        margin-right: 10px;
+    }
+
+    .featured{
+        width: 100%;
+    }
+
+    .featured-right{
+        padding: 0 10px 30px 10px;
+    }
+
+    .featured-right h1{
+        font-size: 3.5rem;
+        padding-left: 0;
+    }
+
+    .featured-right p{
+        line-height: 1.7;
+        font-size: 1rem;
+    }
+
+    .featured-btn{
+        width: 100%;
+    }
+
+    .featured-img img{
+        padding-left: 10px;
+        height: 420px;
+    }
+
+    .main-content{
+        padding-left: 10px;
+    }
+
+    .main-content h1{
+        font-size: 4rem;
+    }
+
+    .featured-left .user img{
+        width: 90px;
+    }
+
+    .featured-left .user h5{
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .featured-left .user p{
+        font-size: 0.9rem;
+    }
 }
